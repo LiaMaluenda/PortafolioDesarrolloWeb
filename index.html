@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lia Maluenda · Portafolio</title>
+  <meta name="description"
+    content="Portafolio de Lia Maluenda, desarrolladora frontend junior: proyectos con Vue 3, JavaScript y SASS, habilidades, formación y contacto." />
+  <meta name="author" content="Lia Maluenda" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#7a1f3d" />
+
+  <!-- Open Graph: vista previa al compartir el enlace en LinkedIn -->
+  <meta property="og:title" content="Lia Maluenda · Portafolio" />
+  <meta property="og:description" content="Desarrolladora frontend junior. Proyectos con Vue 3, JavaScript y SASS." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Script propio: se carga en el head para aplicar el tema guardado antes de pintar la página -->
+  <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== ENCABEZADO / NAVEGACIÓN ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Lia Maluenda, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">LM</span>
+        <span class="brand-name">Lia Maluenda</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Cambiar a modo oscuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.5" />
+          <path
+            d="M12 1.5v3M12 19.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M1.5 12h3M19.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ===================== INICIO (HERO) ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            Desarrolladora frontend junior · Antofagasta, Chile
+          </p>
+          <h1 id="hero-title">Lia <em>Maluenda</em> Barrera</h1>
+          <p class="hero-lead">
+            Desarrolladora web en formación, con proyectos en Vue 3, JavaScript y SASS. Busco mi primera oportunidad
+            como Trainee o Junior.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-ghost" href="#contacto">Contactarme</a>
+          </div>
+          <ul class="hero-links" aria-label="Perfiles profesionales">
+            <li>
+              <a href="https://github.com/LiaMaluenda" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lia-maluenda-barrera-332027250/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <!-- <li>
+                <a
+                  href="assets/CV-Lia-Maluenda.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Descargar CV</a
+                >
+              </li>
+              -->
+          </ul>
+        </div>
+
+        <!-- Tarjeta de perfil con formato de objeto JavaScript -->
+        <figure class="hero-card" aria-label="Resumen del perfil">
+          <div class="hero-card-bar" aria-hidden="true">
+            <span></span><span></span><span></span><code>perfil.js</code>
+          </div>
+          <pre><code><span class="tk-k">const</span> <span class="tk-v">lia</span> = {
+  rol: <span class="tk-s">"Frontend junior"</span>,
+  stack: [<span class="tk-s">"Vue 3"</span>, <span class="tk-s">"JavaScript"</span>, <span class="tk-s">"SASS"</span>],
+  estado: <span class="tk-s">"Vuex"</span>,
+  tests: [<span class="tk-s">"Jest"</span>, <span class="tk-s">"Cypress"</span>],
+  disponible: <span class="tk-k">true</span>
+};</code></pre>
+          <figcaption>
+            Abierta a roles Trainee / Junior · modalidad remota
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img class="avatar-img" src="assets/img/LiaMaluenda.jpg" width="800" height="400" loading="lazy"
+            alt="Fotografía de Lia Maluenda">
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow">Sobre mí</p>
+          <h2 id="sobre-mi-title">Trayectoria Profesional</h2>
+          <p>
+            Desarrolladora frontend en formación, enfocada en construir
+            interfaces claras, accesibles y fáciles de usar con HTML, SASS,
+            JavaScript y Vue 3.
+          </p>
+          <p>
+            Con estudios en Pedagogía en Lenguaje y Comunicación
+            y fuertes habilidades en comunicación asertiva, trabajo en equipo
+            y aprendizaje continuo.
+          </p>
+          <p>
+            Artista digital freelance autodidacta, con habilidades visuales y
+            creativas y una gran capacidad para gestionar plazos de entrega, recursos y
+            proyectos según las necesidades de cada cliente.
+          </p>
+          <p>
+            En búsqueda de una primera oportunidad como Trainee o Junior.
+          </p>
+
+          <dl class="facts">
+            <div>
+              <dt>Ubicación</dt>
+              <dd>Antofagasta, Chile</dd>
+            </div>
+            <div>
+              <dt>Nacionalidad</dt>
+              <dd>Chilena</dd>
+            </div>
+            <div>
+              <dt>Modalidad</dt>
+              <dd>Remota</dd>
+            </div>
+            <div>
+              <dt>Idiomas</dt>
+              <dd>
+                Español nativo<br />Inglés B2, certificado por
+                <a href="https://cert.efset.org/S5y5HG" target="_blank" rel="noopener noreferrer">EF SET</a>
+                (53/100): lectura C2 · comprensión auditiva A2
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRAYECTORIA: EXPERIENCIA, FORMACIÓN, CERTIFICACIONES ===================== -->
+    <section class="section section-alt" id="trayectoria" aria-labelledby="trayectoria-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Trayectoria</p>
+          <h2 id="trayectoria-title">Experiencia y formación</h2>
+        </header>
+
+        <div class="timeline-grid">
+          <!-- Experiencia laboral -->
+          <article class="timeline-block" aria-labelledby="exp-title">
+            <h3 id="exp-title">Experiencia laboral</h3>
+            <ol class="timeline">
+              <li>
+                <p class="tl-date">2020 – actualidad</p>
+                <h4>Artista freelance</h4>
+                <p class="tl-org">
+                  Trabajo independiente - plataformas digitales
+                  internacionales
+                </p>
+                <p>
+                  Encargos para clientes particulares: entender lo que
+                  necesitan, proponer, incorporar sus comentarios, manejar
+                  tiempos, interpretar referencias visuales y entregar en el
+                  plazo acordado.
+                </p>
+              </li>
+              <li>
+                <p class="tl-date">2023 – 2025</p>
+                <h4>Cajera</h4>
+                <p class="tl-org">
+                  Supermercado Santa Isabel - Antofagasta, Chile
+                </p>
+                <p>
+                  Atención de clientes, manejo y cuadratura de caja, y trabajo
+                  en equipo en horarios de alta demanda.
+                </p>
+              </li>
+              <li>
+                <p class="tl-date">2023</p>
+                <h4>Encargada de tienda</h4>
+                <p class="tl-org">Akiba Kei (pyme) - Antofagasta, Chile</p>
+                <p>
+                  Responsable de la operación diaria de la tienda: atención y
+                  venta a clientes, orden del inventario, apertura y cierre.
+                </p>
+              </li>
+            </ol>
+          </article>
+
+          <!-- Formación académica -->
+          <article class="timeline-block" aria-labelledby="edu-title">
+            <h3 id="edu-title">Formación académica</h3>
+            <ol class="timeline">
+              <li>
+                <p class="tl-date">2026 · en curso</p>
+                <h4>Desarrollo de Aplicaciones Front-End Trainee</h4>
+                <p class="tl-org">Alkemy</p>
+                <p>
+                  Maquetación con SASS, JavaScript avanzado, Vue 3, pruebas
+                  automatizadas y desarrollo de portafolio profesional.
+                </p>
+              </li>
+              <li>
+                <p class="tl-date">feb. – sep. 2024</p>
+                <h4>
+                  Desarrollo de Aplicaciones Full Stack Java Trainee v2.0
+                </h4>
+                <p class="tl-org">
+                  Instituto de Capacitación Praxis · programa Reconversión
+                  Laboral (SENCE)
+                </p>
+
+              </li>
+              <li>
+                <p class="tl-date">2018 – 2022</p>
+                <h4>Pedagogía en Lenguaje y Comunicación</h4>
+                <p class="tl-org">
+                  Universidad de Antofagasta, Antofagasta, Chile ·
+                  estudios no finalizados
+                </p>
+              </li>
+            </ol>
+          </article>
+        </div>
+
+        <!-- Certificaciones y distintivos -->
+        <div class="certs" aria-labelledby="cert-title">
+          <h3 id="cert-title">Certificaciones y distintivos</h3>
+          <ul class="cert-list">
+            <li class="cert">
+              <span class="cert-seal" aria-hidden="true">✦</span>
+              <div>
+                <h4>
+                  Desarrollo de Aplicaciones Full Stack Java Trainee v2.0
+                </h4>
+                <p>
+                  SENCE · Instituto de Capacitación Praxis · 2024 · 462 horas
+                </p>
+              </div>
+            </li>
+            <li class="cert">
+              <span class="cert-seal" aria-hidden="true">✦</span>
+              <div>
+                <h4>EF SET English Certificate</h4>
+                <p>
+                  EF SET · B2 Upper Intermediate (53/100) · septiembre 2026
+                </p>
+                <a href="https://cert.efset.org/S5y5HG" class="cert-link" target="_blank" rel="noopener noreferrer">Ver
+                  credencial</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="section" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Habilidades</p>
+          <h2 id="habilidades-title">Tecnologías y herramientas</h2>
+          <p class="section-intro">
+            Las marcadas con ● las he usado en proyectos publicados en este
+            portafolio.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-group">
+            <h3>Lenguajes</h3>
+            <ul class="chips">
+              <li class="chip chip-used">JavaScript ES6+</li>
+              <li class="chip chip-used">HTML5</li>
+              <li class="chip chip-used">CSS3</li>
+              <li class="chip chip-used">SASS / SCSS</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Frameworks y librerías</h3>
+            <ul class="chips">
+              <li class="chip chip-used">Vue 3</li>
+              <li class="chip chip-used">Vuex 4</li>
+              <li class="chip chip-used">Vuetify 3</li>
+              <li class="chip chip-used">Axios</li>
+              <li class="chip chip-used">Bootstrap 5</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Pruebas y calidad</h3>
+            <ul class="chips">
+              <li class="chip chip-used">Jest</li>
+              <li class="chip chip-used">Vue Test Utils</li>
+              <li class="chip chip-used">Cypress</li>
+              <li class="chip chip-used">BEM</li>
+              <li class="chip chip-used">Arquitectura 7-1</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Datos y APIs</h3>
+            <ul class="chips">
+              <li class="chip chip-used">APIs REST</li>
+              <li class="chip chip-used">Fetch API</li>
+              <li class="chip chip-used">JSON</li>
+              <li class="chip chip-used">localStorage</li>
+              <li class="chip">SQL (nivel básico)</li>
+            </ul>
+          </article>
+          <article class="skill-group skill-group-wide">
+            <h3>Herramientas</h3>
+            <ul class="chips">
+              <li class="chip chip-used">Git</li>
+              <li class="chip chip-used">GitHub</li>
+              <li class="chip chip-used">GitHub Pages</li>
+              <li class="chip chip-used">npm</li>
+              <li class="chip chip-used">Vue CLI</li>
+              <li class="chip chip-used">Figma</li>
+              <li class="chip">Clip Studio Paint</li>
+              <li class="chip chip-used">VS Code</li>
+              <li class="chip">Trello</li>
+            </ul>
+          </article>
+          <article class="skill-group skill-group-wide">
+            <h3>Destrezas profesionales</h3>
+            <ul class="chips">
+              <li class="chip">Diseño responsivo (mobile first)</li>
+              <li class="chip">HTML semántico y accesibilidad</li>
+              <li class="chip">Programación orientada a objetos</li>
+              <li class="chip">Trabajo en equipo</li>
+              <li class="chip">Aprendizaje continuo</li>
+              <li class="chip">Comunicación asertiva</li>
+              <li class="chip">Gestión de proyectos y plazos</li>
+              <li class="chip">Resolución de problemas</li>
+              <li class="chip">Pensamiento crítico</li>
+
+            </ul>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="section section-alt" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Proyectos</p>
+          <h2 id="proyectos-title">Proyectos del curso</h2>
+          <p class="section-intro">
+            Cada proyecto incluye descripción de
+            las
+            tecnologías y un breve resumen de los problemas resueltos, mi rol, el resultado y lo aprendido.
+          </p>
+        </header>
+
+        <div class="projects">
+          <!-- Proyecto 1 -->
+          <article class="project" aria-labelledby="p1-title">
+            <div class="project-head">
+              <img class="project-shot" src="assets/img/vue-product-showcase.webp" width="960" height="600"
+                loading="lazy"
+                alt="Catálogo de Vue Product Showcase con filtros por categoría, búsqueda, interruptor de favoritos y tarjetas de productos con precio y valoración." />
+              <p class="project-kind">SPA · Módulo 7</p>
+              <h3 id="p1-title">Vue Product Showcase</h3>
+              <p class="project-summary">
+                Catálogo de productos que consume FakeStoreAPI, con filtros
+                combinables, favoritos y modo claro/oscuro.
+              </p>
+              <ul class="chips chips-sm" aria-label="Tecnologías">
+                <li class="chip">Vue 3</li>
+                <li class="chip">Vuex 4</li>
+                <li class="chip">Vuetify 3</li>
+                <li class="chip">Axios</li>
+                <li class="chip">Jest</li>
+                <li class="chip">Cypress</li>
+              </ul>
+            </div>
+            <dl class="project-detail">
+              <div>
+                <dt>Problema</dt>
+                <dd>
+                  Mostrar un catálogo traído desde una API y permitir
+                  filtrarlo por categoría, nombre y favoritos a la vez, sin
+                  que los componentes pierdan sincronía entre sí.
+                </dd>
+              </div>
+              <div>
+                <dt>Mi rol</dt>
+                <dd>
+                  Desarrollo individual completo: componentes, estado con
+                  Vuex, consumo de la API, pruebas automatizadas y
+                  documentación.
+                </dd>
+              </div>
+              <div>
+                <dt>Resultado</dt>
+                <dd>
+                  SPA con 4 componentes y 3 módulos de Vuex, precios en pesos
+                  chilenos, categorías en español, alerta cuando la API falla
+                  y 3 de 3 pruebas aprobadas (2 unitarias y 1 E2E).
+                </dd>
+              </div>
+              <div>
+                <dt>Aprendizaje</dt>
+                <dd>
+                  Separar componentes presentacionales (props y eventos) de la
+                  lógica de estado, y diseñar pruebas que no dependan de
+                  internet.
+                </dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://liamaluenda.github.io/Vue-Product-Showcase/"
+                target="_blank" rel="noopener noreferrer">Ver demo</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/LiaMaluenda/Vue-Product-Showcase" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project" aria-labelledby="p2-title">
+            <div class="project-head">
+              <img class="project-shot" src="assets/img/taskflow.webp" width="960" height="600" loading="lazy"
+                alt="Aplicación TaskFlow con formulario de nueva tarea, buscador, botón para sincronizar con la API y lista de tareas con cuenta regresiva." />
+              <p class="project-kind">Aplicación web · Módulo 5</p>
+              <h3 id="p2-title">TaskFlow</h3>
+              <p class="project-summary">
+                Gestor de tareas en JavaScript puro con fechas límite,
+                búsqueda en vivo y sincronización con una API REST.
+              </p>
+              <ul class="chips chips-sm" aria-label="Tecnologías">
+                <li class="chip">JavaScript ES6+</li>
+                <li class="chip">POO</li>
+                <li class="chip">Fetch API</li>
+                <li class="chip">localStorage</li>
+                <li class="chip">CSS3</li>
+              </ul>
+            </div>
+            <dl class="project-detail">
+              <div>
+                <dt>Problema</dt>
+                <dd>
+                  Organizar tareas personales sin perderlas al recargar la
+                  página, saber cuánto falta para cada plazo y poder
+                  sincronizarlas con un servidor.
+                </dd>
+              </div>
+              <div>
+                <dt>Mi rol</dt>
+                <dd>
+                  Desarrollo individual: modelo de datos con clases, lógica de
+                  eventos, conexión con la API y estilos.
+                </dd>
+              </div>
+              <div>
+                <dt>Resultado</dt>
+                <dd>
+                  Crear, completar y eliminar tareas; contador de caracteres y
+                  filtro en vivo; cuenta regresiva por segundo; avisos que
+                  desaparecen a los 2&nbsp;s; GET y POST a JSONPlaceholder y
+                  guardado en localStorage.
+                </dd>
+              </div>
+              <div>
+                <dt>Aprendizaje</dt>
+                <dd>
+                  Programación orientada a objetos (clases Tarea y
+                  GestorTareas), delegación de eventos, async/await con manejo
+                  de errores y temporizadores.
+                </dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://liamaluenda.github.io/Taskflow/" target="_blank"
+                rel="noopener noreferrer">Ver demo</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/LiaMaluenda/Taskflow" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project" aria-labelledby="p3-title">
+            <div class="project-head">
+              <img class="project-shot" src="assets/img/smartbudget.webp" width="960" height="600" loading="lazy"
+                alt="Landing de SmartBudget con titular, botones de registro y una tarjeta de balance mensual con gráfico de barras." />
+              <p class="project-kind">Landing page · Módulo 3</p>
+              <h3 id="p3-title">SmartBudget</h3>
+              <p class="project-summary">
+                Landing de una app de finanzas personales, construida a partir
+                de un prototipo de alta fidelidad en Figma.
+              </p>
+              <ul class="chips chips-sm" aria-label="Tecnologías">
+                <li class="chip">SASS / SCSS</li>
+                <li class="chip">BEM</li>
+                <li class="chip">Arquitectura 7-1</li>
+                <li class="chip">Bootstrap 5</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">Figma</li>
+              </ul>
+            </div>
+            <dl class="project-detail">
+              <div>
+                <dt>Problema</dt>
+                <dd>
+                  Llevar un diseño de Figma a código manteniendo los estilos
+                  ordenados y fáciles de escalar a medida que la página crece.
+                </dd>
+              </div>
+              <div>
+                <dt>Mi rol</dt>
+                <dd>
+                  Desarrollo frontend individual: maquetación semántica,
+                  arquitectura de estilos, personalización de Bootstrap e
+                  interacciones.
+                </dd>
+              </div>
+              <div>
+                <dt>Resultado</dt>
+                <dd>
+                  Página publicada con hero, maqueta de dashboard, funciones,
+                  pasos, testimonios y precios. Estilos divididos en carpetas
+                  abstracts, base, components, layout, pages, themes y
+                  vendors.
+                </dd>
+              </div>
+              <div>
+                <dt>Aprendizaje</dt>
+                <dd>
+                  Nombrar clases con BEM, usar variables y parciales de SASS y
+                  sobrescribir variables de Bootstrap en lugar de pelear
+                  contra sus estilos.
+                </dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://liamaluenda.github.io/smartbudget/" target="_blank"
+                rel="noopener noreferrer">Ver demo</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/LiaMaluenda/smartbudget" target="_blank"
+                rel="noopener noreferrer">Repositorio</a>
+              <a class="btn btn-ghost btn-sm"
+                href="https://www.figma.com/make/uYG1DdwcnHWY8ED54jqODP/SmartBudget-landing-page-prototype"
+                target="_blank" rel="noopener noreferrer">Prototipo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section section-alt" id="contacto" aria-labelledby="contacto-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contacto-title">Conversemos</h2>
+          <p>
+            Si buscas a alguien para un rol Trainee o Junior, o quieres
+            comentar alguno de mis proyectos, escríbeme.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <span class="contact-value" id="contactEmail">liamaluenda3@gmail.com</span>
+              <button class="copy-btn" type="button" id="copyEmail">
+                Copiar
+              </button>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a class="contact-value" href="https://github.com/LiaMaluenda" target="_blank"
+                rel="noopener noreferrer">github.com/LiaMaluenda</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a class="contact-value" href="https://www.linkedin.com/in/lia-maluenda-barrera-332027250/"
+                target="_blank" rel="noopener noreferrer">linkedin.com/in/lia-maluenda-barrera-332027250</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required minlength="2" />
+            <p class="field-error" id="nombre-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <p class="field-error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10"></textarea>
+            <p class="field-error" id="mensaje-error" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            Enviar mensaje
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        © <span id="year">2026</span> Lia Maluenda · Hecho con HTML, CSS y
+        JavaScript, publicado en GitHub Pages.
+      </p>
+      <a href="#inicio" class="to-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+</body>
+
+</html>
