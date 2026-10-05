@@ -1,6 +1,6 @@
 # Portafolio web · Lia Maluenda
 
-Portafolio profesional desarrollado como entrega final del módulo **Desarrollo de portafolio de un producto digital** (Alkemy).
+Portafolio profesional desarrollado como entrega final del módulo **Desarrollo de portafolio de un producto digital**.
 
 🔗 **Sitio publicado:** https://liamaluenda.github.io/PortafolioDesarrolloWeb/
 
