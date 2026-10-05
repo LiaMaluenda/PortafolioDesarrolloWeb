@@ -293,6 +293,11 @@ a:hover {
   transform: translateY(1px);
 }
 
+.btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
 .btn-primary {
   background: var(--accent);
   color: var(--on-accent);
@@ -693,6 +698,7 @@ a:hover {
 /* Si agregas foto: <img class="avatar-img" src="assets/img/foto-perfil.jpg" alt="Lia Maluenda"> */
 .avatar-img {
   width: min(100%, 9rem);
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 999px 999px var(--radius) var(--radius);
